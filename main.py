@@ -5,7 +5,7 @@ name = input("What is your first name?")
 song = input("What is your favorite CAS song?")
 clr = input("What is your favorite color?")
 if name.lower() == "allan" and song.lower() == "cry" and clr.lower() == "purple":
-    print("Wow my wonderful girlfriend knows me so well! But I want you to see what I made for you!")
+    print("Wow my wonderful girlfriend knows me so well! But I still want you to see what I made for you!")
 
 elif name.lower() != "pia" or song.lower() != "heavenly" or clr.lower() != "green":
 
@@ -47,6 +47,8 @@ clr = input("What color do you want the turtle to be?")
 thck = input("How THICK should the turtle be?")
 fst = input("How fast should the turtle be?")
 
+time.sleep(2)
+
 
 allan = make_turtle("purple", int(thck), int(fst))
 pia = make_turtle(clr, int(thck), int(fst ))
@@ -56,7 +58,7 @@ us = make_turtle("red", int(thck),1 )
 us.hideturtle()
 
 wn = turtle.Screen()
-wn.bgcolor("lightgreen")
+wn.bgcolor("pink")
 
 def make_right_half_of_a_heart(w):
     w.begin_fill()
@@ -97,6 +99,8 @@ def make_full_heart(w):
     w.forward(30)
     time.sleep(1)
     us.hideturtle()
+    w.write("Us")
+    w.forward(20)
     w.write("I love you so much!", align = "center", font = ("Times New Roman", 15))
     w.forward(20)
     time.sleep(2)
